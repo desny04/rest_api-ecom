@@ -62,7 +62,7 @@ class ProductViewSet(viewsets.ModelViewSet):
         return super().get_permissions()
 
 class WishlistViewSet(viewsets.ModelViewSet):
-    serializer_class=WishlistViewSet
+    serializer_class=WishlistSerializer
     permission_classes=[IsAuthenticated]
 
     def get_queryset(self):
